@@ -19,8 +19,8 @@ dependencies {
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.12'
 }
 
-test {
-    systemProperties 'property': 'value'
+task stage {
+    dependsOn build
 }
 
 uploadArchives {
